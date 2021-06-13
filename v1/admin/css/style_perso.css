@@ -1,0 +1,6 @@
+.titre_colonnes {
+    background-color: rgb(227, 230, 240);
+}
+.titre_colonnes th {
+    border: none;
+}

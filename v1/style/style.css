@@ -1,0 +1,11 @@
+.bg_gris {
+    background-color: rgba(144, 164, 185, 0.144);
+    /* background-color: rgba(211, 202, 203, 0.5); */
+}
+.col_rouge {
+    color: rgb(230, 45, 53);
+    /* color: rgb(229, 39, 47); */
+}
+li {
+    list-style: none;
+}
