@@ -15,17 +15,33 @@
                     </button>
 
                     <!-- Topbar Search -->
-                    <form
+                    <form action="<?= URL_ADMIN ?>action.php" method="POST"
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                            <input name="nom" type="text" class="form-control bg-light border-0 small" placeholder="Rechercher..."
                                 aria-label="Search" aria-describedby="basic-addon2">
+                            <select name="categorie" id="">
+                                <option value="">Catégorie...</option>
+                                <option value="box">box</option>
+                                <option value="client">client</option>
+                                <option value="contact">contact</option>
+                                <option value="role">role</option>
+                                <option value="objet">objet</option>
+                                <option value="piece">piece</option>
+                                <option value="utilisateur">utilisateur</option>
+                            </select>
                             <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
+                                <button name="btn_search" class="btn btn-primary" type="submit">
                                     <i class="fas fa-search fa-sm"></i>
                                 </button>
                             </div>
                         </div>
+                        <span class="text-danger">
+                        <?php if(isset($_SESSION['erreur_search'])) {
+                            echo $_SESSION['erreur_search'];
+                            unset($_SESSION['erreur_search']);
+                        } ?>
+                        </span>
                     </form>
 
                     <!-- Topbar Navbar -->

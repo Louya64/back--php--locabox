@@ -4,7 +4,7 @@
 ?>
 <div class="container">
     <h1 class="text-center">Connection</h1>
-    <?php //var_dump(password_hash('Toto', PASSWORD_DEFAULT)) 
+    <?php //var_dump(password_hash('Tutu', PASSWORD_DEFAULT));
         if (isset($_SESSION['erreur'])) {
             echo $_SESSION['erreur'];
             unset($_SESSION['erreur']);

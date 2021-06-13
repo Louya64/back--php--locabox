@@ -29,14 +29,14 @@
 <table class="table mt-5 text-center">
     <thead class="titre_colonnes">
         <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Libellé</th>
-            <th scope="col">Surface</th>
-            <th scope="col">Volume</th>
-            <th scope="col">Prix</th>
-            <th scope="col">Disponibilité</th>
-            <th scope="col"></th>
-            <th scope="col"></th>
+            <th class="th0" scope="col">Id</th>
+            <th class="th1" scope="col">Libellé</th>
+            <th class="th2" scope="col">Surface</th>
+            <th class="th3" scope="col">Volume</th>
+            <th class="th4" scope="col">Prix</th>
+            <th class="th5" scope="col">Disponibilité</th>
+            <th class="th6" scope="col"></th>
+            <th class="th7" scope="col"></th>
         </tr>
     </thead>
     <tbody>
@@ -52,14 +52,14 @@
             }
         ?>
         <tr>
-            <td class="col1" id="col1"><?= $box['id'] ?></td>
-            <td><?= $box['libelle'] ?></td>
-            <td><?= $box['surface'] ?></td>
-            <td><?= $box['volume'] ?></td>
-            <td><?= $box['prix'] ?></td>
-            <td><span class="text-<?= $couleur ?>"><?= $dispo ?></span></td>
-            <td><a class="btn btn-warning" href="update.php?id=<?= $box['id'] ?>">Modifier</a></td>
-            <td><a class="btn btn-danger" href="action.php?id=<?= $box['id'] ?>">Supprimer</a></td>
+            <td class="td0"><?= $box['id'] ?></td>
+            <td class="td1"><?= $box['libelle'] ?></td>
+            <td class="td2"><?= $box['surface'] ?></td>
+            <td class="td3"><?= $box['volume'] ?></td>
+            <td class="td4"><?= $box['prix'] ?></td>
+            <td class="td5"><span class="text-<?= $couleur ?>"><?= $dispo ?></span></td>
+            <td class="td6"><a class="btn btn-warning" href="update.php?id=<?= $box['id'] ?>">Modifier</a></td>
+            <td class="td7"><a class="btn btn-danger" href="action.php?id=<?= $box['id'] ?>">Supprimer</a></td>
         </tr>
         <?php endforeach; ?>
     </tbody>

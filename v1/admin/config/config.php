@@ -2,7 +2,7 @@
 
 session_start();
 
-define('URL_ADMIN', 'http://localhost/Afpa/08_fil_rouge/v1/admin/');
+define('URL_ADMIN', 'http://localhost/Afpa/08_fil_rouge/locabox/v1/admin/');
 
 function checkConnection() {
     if (isset($_SESSION['connect']) && $_SESSION['connect'] == true) {

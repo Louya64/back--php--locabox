@@ -32,7 +32,7 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#client"
                     aria-expanded="true" aria-controls="client">
                     <i class="fas fa-people-arrows"></i>
-                    <span>Client</span>
+                    <span>Clients</span>
                 </a>
                 <div id="client" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -115,6 +115,38 @@
                         <h6 class="collapse-header">Action actu:</h6>
                         <a class="collapse-item" href="<?= URL_ADMIN ?>actus/add.php">Ajouter une actualité</a>
                         <a class="collapse-item" href="<?= URL_ADMIN ?>actus/">Liste des actualité</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#utilisateur"
+                    aria-expanded="true" aria-controls="utilisateur">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Utilisateurs</span>
+                </a>
+                <div id="utilisateur" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Action utilisateur:</h6>
+                        <a class="collapse-item" href="<?= URL_ADMIN ?>utilisateur/add.php">Ajouter un utilisateur</a>
+                        <a class="collapse-item" href="<?= URL_ADMIN ?>utilisateur/">Liste des utilisateurs</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#objet"
+                    aria-expanded="true" aria-controls="objet">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Objets</span>
+                </a>
+                <div id="objet" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Action objet:</h6>
+                        <a class="collapse-item" href="<?= URL_ADMIN ?>objet/add.php">Ajouter un objet</a>
+                        <a class="collapse-item" href="<?= URL_ADMIN ?>objet/">Liste des objets</a>
                     </div>
                 </div>
             </li>
