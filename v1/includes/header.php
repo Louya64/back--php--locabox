@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg navbar-light container py-3">
         <div class="container-fluid">
             <a class="navbar-brand" href="<?= $accueil_site ?>">
-                <img src="http://localhost/Afpa/08_fil_rouge/v1/images/logo.png" alt="" width="200">
+                <img src="http://localhost/Afpa/08_fil_rouge/locabox/v1/images/logo.png" alt="" width="200">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
