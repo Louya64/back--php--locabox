@@ -22,36 +22,44 @@ if (isset($_POST['btn_add'])) {
 
 }
 
-// if (isset($_POST['btn_update'])) {
-//     $id = intval(htmlspecialchars($_POST['id']));
-//     $libelle = htmlspecialchars($_POST['libelle']);
-//     $surface = doubleval(htmlspecialchars($_POST['surface']));
-//     $volume = doubleval(htmlspecialchars($_POST['volume']));
-//     $prix = doubleval(htmlspecialchars($_POST['prix']));
-//     $dispo = intval(htmlspecialchars($_POST['disponibilite']));
-//     $statut = intval(htmlspecialchars($_POST['statut']));
+if (isset($_POST['btn_update'])) {
+    $id = '';
+    $nom = '';
+    $prenom = '';
+    $pseudo = '';
+    $mp = '';
+    $mail = '';
+    $statut = '';
 
-//     $sql = "UPDATE box SET libelle = '$libelle', surface = $surface, volume = $volume, prix = $prix, disponibilite = $dispo, statut = $statut WHERE id = $id";
-//     $req = $bdd->prepare($sql);
-//     if (!$req->execute()) {
-//         echo 'erreur execution requete modif';
-//         header('location: index.php');
-//         die;
-//     }
-//     header('location: index.php');
-//     die;
+    $id = intval(htmlspecialchars($_POST['id']));
+    $nom = addslashes(htmlspecialchars($_POST['nom']));
+    $prenom = addslashes(htmlspecialchars($_POST['prenom']));
+    $pseudo = addslashes(htmlspecialchars($_POST['pseudo']));
+    $mp = addslashes(htmlspecialchars($_POST['mp']));
+    $mail = addslashes(htmlspecialchars($_POST['mail']));
+    $statut = intval(htmlspecialchars($_POST['statut']));
 
-// }
+    $sql = "UPDATE utilisateur SET nom = '$nom', prenom = '$prenom', pseudo = '$pseudo', mp = '$mp', mail = '$mail', statut = $statut WHERE id = $id";
+    $req = $bdd->prepare($sql);
+    if (!$req->execute()) {
+        echo 'erreur execution requete modif';
+        header('location: index.php');
+        die;
+    }
+    header('location: index.php');
+    die;
 
-// if (isset($_GET['id'])) {
-//     $id = intval(htmlspecialchars($_GET['id']));
+}
 
-//     $sql = "UPDATE box SET statut = 1 WHERE id = $id";
-//     $req = $bdd->prepare($sql);
-//     if (!$req->execute()) {
-//         echo 'erreur execution requete suppr';
-//         die;
-//     }
-//     header('location: index.php');
-//     die;
-// }
+if (isset($_GET['id'])) {
+    $id = intval(htmlspecialchars($_GET['id']));
+
+    $sql = "UPDATE utilisateur SET statut = 1 WHERE id = $id";
+    $req = $bdd->prepare($sql);
+    if (!$req->execute()) {
+        echo 'erreur execution requete suppr';
+        die;
+    }
+    header('location: index.php');
+    die;
+}

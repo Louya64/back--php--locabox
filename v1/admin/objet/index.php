@@ -35,7 +35,7 @@
             <th class="th6" scope="col"></th>
         </tr>
     </thead>
-    <tbody class="bg-success">
+    <tbody>
         <?php foreach($objets as $objet): ?>
         <tr>
             <td class="td1"><?= $objet['libelle'] ?></td>

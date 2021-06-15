@@ -20,7 +20,7 @@
     <link href="<?= URL_ADMIN ?>css/sb-admin-2.min.css" rel="stylesheet">
     <link href="<?= URL_ADMIN ?>css/style_perso.css" rel="stylesheet">
 
-    <title>Locabox Admin</title>
+    <title>Locabox Admin - <?= $title ?></title>
 
 </head>
 

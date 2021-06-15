@@ -80,17 +80,17 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#location"
-                    aria-expanded="true" aria-controls="location">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#statistique"
+                    aria-expanded="true" aria-controls="statistique">
                     <i class="fas fa-file-signature"></i>
                     <span>Statistques</span>
                 </a>
-                <div id="location" class="collapse" aria-labelledby="headingUtilities"
+                <div id="statistique" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Action location:</h6>
-                        <a class="collapse-item" href="<?= URL_ADMIN ?>locations/add.php">Ajouter une location</a>
-                        <a class="collapse-item" href="<?= URL_ADMIN ?>locations/ ">Liste des location</a>
+                        <h6 class="collapse-header">Action statistique:</h6>
+                        <a class="collapse-item" href="<?= URL_ADMIN ?>statistiques/add.php">Ajouter une statistique</a>
+                        <a class="collapse-item" href="<?= URL_ADMIN ?>statistiques/ ">Liste des statistique</a>
                     </div>
                 </div>
             </li>

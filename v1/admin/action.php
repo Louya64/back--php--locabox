@@ -59,11 +59,12 @@ if(isset($_POST['btn_search'])) {
 
     $res = $req->fetchAll(PDO::FETCH_ASSOC);
     if (count($res) == 0) {
-        $_SESSION['erreur_search'] = 'aucun "' . $nom . '" trouvé dans la catégorie ' . $categorie;
+        $_SESSION['erreur_search'] = 'aucun "' . $nom . '" trouvé dans la catégorie ' . $categorie; 
         header('location: index.php');
         die;
     }
     $_SESSION['ok_search'] = $res;
+    $_SESSION['categorie'] = $categorie;
     header('location: index.php');
     die;
 }

@@ -6,7 +6,6 @@ $password = 'C7aOoFDgtrFbj9UK';
 
 try {
     $bdd = new PDO($dsn, $user, $password);
-    echo 'connection bdd ok<br>';
 } catch (PDOException $e) {
     echo('erreur: ' . $e->getMessage());
     die;

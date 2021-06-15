@@ -24,7 +24,7 @@
                                 <option value="">Catégorie...</option>
                                 <option value="box">box</option>
                                 <option value="client">client</option>
-                                <option value="contact">contact</option>
+                                <option value="contact">contact</option> 
                                 <option value="role">role</option>
                                 <option value="objet">objet</option>
                                 <option value="piece">piece</option>
