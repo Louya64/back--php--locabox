@@ -71,6 +71,5 @@ function checkConnection() {
     if (isset($_SESSION['connect']) && $_SESSION['connect'] == true) {
         return true;
     }
-    echo "déconnecté";
     return false;
 }

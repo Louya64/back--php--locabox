@@ -4,3 +4,8 @@
 .titre_colonnes th {
     border: none;
 }
+.ttr_fixed {
+    position: fixed;
+    top: 10px;
+    width: 100%;
+}
