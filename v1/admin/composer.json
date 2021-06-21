@@ -1,0 +1,11 @@
+{
+    "name": "fichier/composer",
+    "autoload": {
+        "psr-4": {
+            "Fichier\\Composer\\": "src/"
+        }
+    },
+    "require": {
+        "fzaninotto/faker": "^1.9"
+    }
+}
